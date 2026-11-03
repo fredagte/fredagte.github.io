@@ -1,0 +1,30 @@
+#EXTM3U
+# Fredstream test playlist for Google Play app review.
+# Contains only freely licensed demo content and public test streams:
+# Big Buck Bunny, Elephants Dream, Sintel (c) Blender Foundation, CC BY 3.0 (https://www.blender.org)
+# Test streams from Apple, Akamai, Mux and Unified Streaming (public developer test streams).
+# The app treats URLs containing "/movie/" as movies and "/series/" + SxxExx as series episodes;
+# the "#/movie/" and "#/series/" fragments only mark the type and are not sent to the server.
+
+#EXTINF:-1 tvg-id="test.bipbop" group-title="Test Channels",Apple HLS Test Stream
+https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8
+#EXTINF:-1 tvg-id="test.akamai" group-title="Test Channels",Akamai Live Test Stream
+https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8
+#EXTINF:-1 tvg-id="test.bbb" group-title="Open Movie Channels",Big Buck Bunny (HLS)
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+#EXTINF:-1 tvg-id="test.tos" group-title="Open Movie Channels",Tears of Steel (HLS)
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
+
+#EXTINF:-1 group-title="Open Movies",Big Buck Bunny (2008)
+https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4#/movie/
+#EXTINF:-1 group-title="Open Movies",Elephants Dream (2006)
+https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4#/movie/
+#EXTINF:-1 group-title="Open Movies",Sintel (2010)
+https://archive.org/download/Sintel/sintel-2048-surround_512kb.mp4#/movie/
+
+#EXTINF:-1 group-title="Open Series",Blender Open Movies S01E01 Elephants Dream
+https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4#/series/
+#EXTINF:-1 group-title="Open Series",Blender Open Movies S01E02 Big Buck Bunny
+https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4#/series/
+#EXTINF:-1 group-title="Open Series",Blender Open Movies S01E03 Sintel
+https://archive.org/download/Sintel/sintel-2048-surround_512kb.mp4#/series/
